@@ -1,0 +1,133 @@
+.hide {
+    display: none;
+  }
+  
+  body {
+   font-family: 'Cardo', serif;
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+   font-family: 'Oswald', sans-serif;
+   text-transform: uppercase;
+    
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    max-width: 60%; 
+    margin-top: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 10px; 
+    background: #75E6DA;
+    color: #05445E; 
+    box-shadow: 8px 3px 8px 0px black; 
+    font-size: 120%;
+  }
+  
+  #form h1 {
+    margin-bottom: 0px;
+  }
+  
+  #form details {
+    margin-bottom: 35px;
+  }
+  
+  input[type="number"] {
+    width: 13em; 
+  }
+  
+  
+  input[type = "button"] {
+    background: rgba(24, 149, 216, 1);
+    color: white; 
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 11px; 
+    font-size: 90%;
+    border: none;
+    margin-bottom: 6%;
+    font-size: 80%;
+    
+  }
+  
+  .btn-enter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .btn-enter:hover {background:rgba(22, 136, 197, 1);}
+
+
+  p {
+      padding: 2px 50px 0px 50px;
+      text-align: center;
+  }
+  
+  #popup-trigger:hover{color:rgba(0, 0, 0, 0.5);}
+  
+  #popup {
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+    width: 100vw;
+    position: absolute; 
+    display: none;
+    justify-content: center;
+  }
+  
+  .popup-content {
+    height: 20vw;
+    width: 40vh;
+    padding: 20px;
+    margin-top: 8%;
+    background: white;
+    border-radius: 5px; 
+    position: absolute;
+  }
+  
+  .close {
+    position: absolute;
+    z-index: 1;
+    margin-top: 45px; 
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .popup-content {
+    height: 20vw;
+    width: 40vh;
+    padding: 20px;
+    padding-bottom: 50%;
+    margin-top: 8%;
+    background: white;
+    border-radius: 5px; 
+    position: absolute;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #form {
+    width: 90%;
+    max-width: 100%;
+    margin-top: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5px;
+    border-radius: 10px; 
+    background: #75E6DA;
+    color: #05445E; 
+    box-shadow: 8px 3px 8px 0px black; 
+    font-size: 120%;
+    }
+  
+  }

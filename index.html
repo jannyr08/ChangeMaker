@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Material Design Bootstrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+      
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+           rel = "stylesheet" >
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body { background: rgb(26, 28, 31); }
+    </style>
+    <title>Change calculator</title>
+    
+</head>
+<body>
+    <!-- <div id="popup">
+      
+        <div class="popup-content">
+          <p> Your change will show up in <span id="currency-title1"> US Dollars</span>. </p>
+           -->
+           <!-- Example single danger button -->
+    <!-- <div class="dropdown">
+      <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Change
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" id="yen" onclick="yen();">Japanese Yen</a>
+        <a class="dropdown-item" id="euros" onclick="euro();">Euro</a>
+        <a class="dropdown-item" id="rupee" onclick="rupees();">Indian Rupee</a>
+      </div>
+    </div>
+       
+        </div>
+        
+    </div> -->
+      
+    <div id="form">
+      <!-- <p> <span id="currency-title2"> US Dollar </span> <i class="fa fa-question-circle" aria-hidden="true" id="popup-trigger" onclick="changeCurrency();"></i> </p>  -->
+    
+       <h1> Change Maker </h1>
+      <details>
+      <summary>Learn more </summary>
+      <p>The Change Maker calculates the least amount of bills and coins that are needed for your change. </p>
+        
+    </details>
+      
+          <form>
+      Item price
+         <input type="number" id="price" name="price" class="form-control"/>
+            
+      <br/> <br/> Cash <input type="number" id="cash" name="cash" class="form-control"/><br/>
+    
+      <input type="button" value="Enter" onclick="confirmValues();" class="btn-enter"/>
+            
+    
+    </form>
+    <p id="confirmation"></p>
+      <input type="button" id="confirm" class="hide" value="Confirm"/>
+    <p id="change"></p>
+        </div>
+      
+      <!-- JQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+      <script src="index.js"></script>
+      
+</body>
+</html>
+
+  
+  
+  
+  
