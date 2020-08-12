@@ -9,7 +9,7 @@
 ## Future functionalities
 
 * [ ] Ability to **change currency**. 
-* [ ] Give out change based on the number of bills and coins currently in user's register. 
+* [ ] Give out change based on the number of bills and coins currently in user's registry. 
 
 ## Link
 
