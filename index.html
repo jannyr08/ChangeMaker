@@ -13,58 +13,66 @@
    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
            rel = "stylesheet" >
     <link rel="stylesheet" href="index.css">
-    <style>
-        body { background: rgb(26, 28, 31); }
-    </style>
-    <title>Change calculator</title>
+    <title>Change Maker</title>
     
 </head>
 <body>
-    <!-- <div id="popup">
+
+    <header>
+      <img src="treasure.svg" alt="Money">
+      <div id = "text">
+        <h1> Change Maker </h1>
+        <p> Your very own personal cashier </p>
+      </div>
+    
+    </header>
+
+    <div id="form">
+    
+      <form id="myForm">
+        <div id="original">
+          <h3> Enter values</h3>
+          <p>(<span id="currency-name">US Dollars</span>)</p>
+
+          Item price
+          <input type="number" id="price" name="price" class="form-control"/>
+                
+          <br/> <br/> Cash <input type="number" id="cash" name="cash" class="form-control"/><br/>
+        
+          <input type="button" value="Enter" onclick="confirmValues();" class="btn-enter"/>
+        </div>
+        
+        <div id="add-on">
+          <h3 id="add-on-title"></h3>
+          <p id="confirmation"></p>
+          <input type="button" id="confirm" class="hide" value="Confirm"/>
+        </div>
+
+        <div id="resultDiv">
+          <h3 id="result"></h3>
+          <p id="change"></p>  
+          <input type="button" id="reset1" class="hide" value="Reset"/>
+        </div>
+    </form>
+
+    <div id="details">
+      <h2> Details: </h2>
+      <p> Change Maker converts your change into the smallest possible number of bills and coins. 
+        The default currency is US Dollar. 
+      </p>
       
-        <div class="popup-content">
-          <p> Your change will show up in <span id="currency-title1"> US Dollars</span>. </p>
-           -->
-           <!-- Example single danger button -->
-    <!-- <div class="dropdown">
-      <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Change
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" id="yen" onclick="yen();">Japanese Yen</a>
-        <a class="dropdown-item" id="euros" onclick="euro();">Euro</a>
-        <a class="dropdown-item" id="rupee" onclick="rupees();">Indian Rupee</a>
+             <select id = "changeCurrency">
+              <option value = "">--Choose currency--</option>
+               <option value = "dollar">US Dollar (default)</option>
+               <option value = "yen" >Japanese Yen</option>
+               <option value = "peso" >Philippine Peso</option>
+        </select>
+        <button onclick="changeCurrency();"> Choose </button>
       </div>
     </div>
-       
-        </div>
-        
-    </div> -->
-      
-    <div id="form">
-      <!-- <p> <span id="currency-title2"> US Dollar </span> <i class="fa fa-question-circle" aria-hidden="true" id="popup-trigger" onclick="changeCurrency();"></i> </p>  -->
     
-       <h1> Change Maker </h1>
-      <details>
-      <summary>Learn more </summary>
-      <p>The Change Maker calculates the least amount of bills and coins that are needed for your change. </p>
-        
-    </details>
-      
-          <form>
-      Item price
-         <input type="number" id="price" name="price" class="form-control"/>
-            
-      <br/> <br/> Cash <input type="number" id="cash" name="cash" class="form-control"/><br/>
     
-      <input type="button" value="Enter" onclick="confirmValues();" class="btn-enter"/>
-            
-    
-    </form>
-    <p id="confirmation"></p>
-      <input type="button" id="confirm" class="hide" value="Confirm"/>
-    <p id="change"></p>
-        </div>
+    </div>
       
       <!-- JQuery -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
