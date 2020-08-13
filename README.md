@@ -4,12 +4,12 @@
 
 ## Finished functionalities
 
-* [x] Gives out correct number of bills and coins in US Dollars. 
+* [x] Gives out correct number of bills and coins in US Dollar. 
+* [x] Ability to **change currency (into Japanese Yen and Philippine Peso)**. 
 
 ## Future functionalities
-
-* [ ] Ability to **change currency**. 
 * [ ] Give out change based on the number of bills and coins currently in user's registry. 
+* [ ] Make responsive. 
 
 ## Link
 
