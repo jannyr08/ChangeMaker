@@ -3,7 +3,6 @@
     let cash = document.getElementById("cash").value;
   
     const confirmation = document.getElementById("confirmation");
-    const changeEl = document.getElementById("change");
     const confirm = document.getElementById("confirm");
     const addOn = document.getElementById("add-on");
     const addOnTitle = document.getElementById("add-on-title");
@@ -19,7 +18,7 @@
       confirmation.innerHTML = '<br>' + "Your total purchase costs " + itemCost.toFixed(2) + " and you have " + cash.toFixed(2) + " to pay for it.";
       document.getElementById("add-on").classList.remove("hide");
       confirm.classList.remove("hide");
-      
+      $("#add-on").css("display", "block");
       addOn.classList.add("add-on-margin");
       confirm.classList.add("btn-enter");
       addOnTitle.innerHTML = "Confirm";
@@ -55,9 +54,6 @@
       "25¢ Peso Coin", "10¢ Peso Coin", "5¢ Peso Coin", "1¢ Peso Coin"]
     };
 
-    // onclick of yen button, currency -> yen
-    console.log(selectedCurrency);
-
     let usedCurrency = currencies[selectedCurrency];
     let usedCurrencyName = currencyNames[selectedCurrency];
     console.log(usedCurrency);
@@ -92,7 +88,8 @@
 
     resetBtn.onclick = function () {
       document.getElementById("myForm").reset();
-      document.getElementById("add-on").classList.add("hide");
+     
+      $("#add-on").css("display", "none");
       document.getElementById("resultDiv").classList.add("hide");
     }
   }
@@ -113,7 +110,6 @@
      //Step 1. Get number of dollar for each type of dollar 
       let dValue = parseInt(remainder / value);
      // Step 2. Storing numDValue in an array 
-      dValue = dValue;
       return dValue;
    }
 
