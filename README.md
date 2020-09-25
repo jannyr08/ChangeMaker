@@ -1,6 +1,6 @@
 # Personal Project 1 - *Change Maker*
 
-**Change Maker** is JavaScript Web Application which which converts change into the smallest possible number of bills and coins in US Dollar. 
+**Change Maker** is JavaScript Web Application which which converts change into the smallest possible number of bills and coins (now available in different currencies). 
 
 ## Finished functionalities
 
